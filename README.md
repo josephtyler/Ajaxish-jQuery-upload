@@ -30,44 +30,39 @@ loadingStart: false,
 loadingStop: false
 ```
 
-```
-formSrc
-```
+
+######formSrc
 
 The formSrc is the url to be used in the hidden iframe src. This is the location of your file upload form.
 
-```
-fileInputEle
-```
+
+######fileInputEle
 
 This is the html input used to upload a file. This can be any jQuery selector.
 
-```
-fileSubmitEle
-```
+
+######fileSubmitEle
 
 This is the html input used to submit the form. This can be any jQuery selector.
 
-```
-fileFormEle
-```
+
+######fileFormEle
 
 This is the html form element you want to use. This is useful if there are multiple forms on your formSrc.
 
-```
-callback
-```
+
+######callback
+
 
 This is a function that will be called as soon as the file finishes uploading and the json response is received. The json response is passed into the callback function as the first parameter. The second parameter is the jQuery object representing the button clicked in the parent.
 
-```
-loadingStart
-```
+
+######loadingStart
+
 
 This is a function that gets called when the form submission begins. This is useful for adding a loading animation. The jQuery object representing the button clicked in the parent is passed in as the only paramenter.
 
-```
-loadingStop
-```
+
+######loadingStop
 
 This is a function that gets called when the form submission ends. This is useful for stopping a loading animation. The jQuery object representing the button clicked in the parent is passed in as the only paramenter.
