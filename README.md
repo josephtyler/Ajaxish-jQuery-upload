@@ -1,7 +1,7 @@
-Ajaxish-jQuery-upload
+Ajaxish jQuery Uploader
 =====================
 
-An ajaxish jQuery file uploader.
+An ajaxish jQuery file uploader. Called "ajaxish" because it only simulates an asynchronous javascript request to the server. In fact, this uploader uses a normal HTTP request within a hidden iframe.
 
 
 ####Instantiation
@@ -12,7 +12,7 @@ $("#someElement").ajaxish()
 
 ####What this does
 
-Instantiating with no options will add a click event handler onto #someElement. Then it will add a hidden iframe onto the page with the src = "upload_file_form.php". This is likely an attribute you'll want to customize. The form source should be an accessible page with an HTML form, and upon submission, it should respond with json. The demo gives a very basic example of this file.
+Instantiating with no options will add a click event handler onto #someElement and add a hidden iframe onto the page with the src = "upload_file_form.php". This is likely an option you'll want to change. The form source should be an HTTP accessible page with an HTML form, and upon submission it should respond with json. The demo gives a very basic example of this file.
 
 ####Options
 
